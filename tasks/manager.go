@@ -38,6 +38,6 @@ func RenderTask(task models.Task, manager *db.Manager) {
 			log.Printf("Ошибка выполнения таска: %v", err)
 		}
 
-		log.Printf("Таск выполнен: %s", task.Status)
+		log.Printf("Таск с ID %d завершен", task.ID)
 	}()
 }
